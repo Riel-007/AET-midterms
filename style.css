@@ -1,0 +1,223 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 150vh;
+  background-image: url('/assets/parchment-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+.page-container {
+  width: 100%;
+  min-height: 150vh;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: transparent;
+  border-radius: 8px;
+  position: relative;
+  min-height: 90vh;
+}
+
+#page2, #page3 {
+  display: none;
+}
+
+.next-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #8b4513;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 100;
+}
+
+.next-button.prev {
+  right: 120px;
+}
+
+.next-button:hover {
+  background-color: #6b3410;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c1810;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.plot-diagram {
+  position: relative;
+  height: 800px;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-image: url('/assets/flow of plot.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.plot-point {
+  position: absolute;
+  width: 300px;
+}
+
+.plot-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px;
+  border-radius: 4px;
+  color: #2c1810;
+}
+
+.scene-box {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #8b4513;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Page 1 specific image assignments */
+#page1 .exposition .scene-box {
+  background-image: url('/assets/malin 1.jpg');
+}
+
+#page1 .rising-actions .scene-box[data-position="rising1"] {
+  background-image: url('/assets/malin 2.jpg');
+}
+
+#page1 .rising-actions .scene-box[data-position="rising2"] {
+  background-image: url('/assets/malin 3.jpg');
+}
+
+#page1 .climax .scene-box {
+  background-image: url('/assets/malin 4.jpg');
+}
+
+#page1 .falling-action .scene-box {
+  background-image: url('/assets/malin 5.jpg');
+}
+
+#page1 .resolution .scene-box {
+  background-image: url('/assets/malin 6.jpg');
+}
+
+.rising-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* Updated positions to align with the plot diagram lines */
+.climax {
+  top: 0.1%;
+  left: 28%;
+  transform: translateX(-50%);
+}
+
+.rising-actions {
+  top: 40%;
+  left: -2%;
+  width: 620px;
+}
+
+.falling-action {
+  top: 15%;
+  right: 10%;
+  transform: rotate(0deg);
+}
+
+.exposition {
+  bottom: -20%;
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.resolution {
+  bottom: 10%;
+  right: 20%;
+  transform: translateX(50%);
+}
+
+.scenes-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  min-height: 170px;
+  border: 2px solid #8b4513;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #8b4513 transparent;
+}
+
+.scenes-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scenes-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scenes-container::-webkit-scrollbar-thumb {
+  background-color: #8b4513;
+  border-radius: 4px;
+}
+
+.scene {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #8b4513;
+  border-radius: 4px;
+  cursor: move;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #2c1810;
+  text-align: center;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.scene.dragging {
+  opacity: 0.5;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structure of Plot</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- First Page -->
+      <div class="container" id="page1">
+        <button class="next-button" onclick="navigateToPage(2)">Next →</button>
+        <h1>Structure of Plot - Malin Kundang</h1>
+        
+        <!-- Plot Structure Diagram -->
+        <div class="plot-diagram">
+          <div class="plot-point climax">
+            <div class="plot-label">Climax</div>
+            <div class="scene-box" data-position="climax"></div>
+          </div>
+          
+          <div class="plot-point rising-actions">
+            <div class="plot-label">Rising Action</div>
+            <div class="rising-boxes">
+              <div class="scene-box" data-position="rising1"></div>
+              <div class="scene-box" data-position="rising2"></div>
+            </div>
+          </div>
+          
+          <div class="plot-point falling-action">
+            <div class="plot-label">Falling Action</div>
+            <div class="scene-box" data-position="falling"></div>
+          </div>
+          
+          <div class="plot-point exposition">
+            <div class="plot-label">Exposition</div>
+            <div class="scene-box" data-position="exposition"></div>
+          </div>
+          
+          <div class="plot-point resolution">
+            <div class="plot-label">Resolution</div>
+            <div class="scene-box" data-position="resolution"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Page -->
+      <div class="container" id="page2">
+        <button class="next-button prev" onclick="navigateToPage(1)">← Back</button>
+        <button class="next-button" onclick="navigateToPage(3)">Next →</button>
+        <h1>Structure of Plot - Try it yourself!</h1>
+        
+        <!-- Plot Structure Diagram -->
+        <div class="plot-diagram">
+          <div class="plot-point climax">
+            <div class="plot-label">Climax</div>
+            <div class="scene-box" data-position="climax"></div>
+          </div>
+          
+          <div class="plot-point rising-actions">
+            <div class="plot-label">Rising Action</div>
+            <div class="rising-boxes">
+              <div class="scene-box" data-position="rising1"></div>
+              <div class="scene-box" data-position="rising2"></div>
+            </div>
+          </div>
+          
+          <div class="plot-point falling-action">
+            <div class="plot-label">Falling Action</div>
+            <div class="scene-box" data-position="falling"></div>
+          </div>
+          
+          <div class="plot-point exposition">
+            <div class="plot-label">Exposition</div>
+            <div class="scene-box" data-position="exposition"></div>
+          </div>
+          
+          <div class="plot-point resolution">
+            <div class="plot-label">Resolution</div>
+            <div class="scene-box" data-position="resolution"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Page -->
+      <div class="container" id="page3">
+        <button class="next-button" onclick="navigateToPage(2)">← Back</button>
+        <h1>Structure of Plot - Make your own!</h1>
+        
+        <!-- Plot Structure Diagram -->
+        <div class="plot-diagram">
+          <div class="plot-point climax">
+            <div class="plot-label">Climax</div>
+            <div class="scene-box" data-position="climax"></div>
+          </div>
+          
+          <div class="plot-point rising-actions">
+            <div class="plot-label">Rising Action</div>
+            <div class="rising-boxes">
+              <div class="scene-box" data-position="rising1"></div>
+              <div class="scene-box" data-position="rising2"></div>
+            </div>
+          </div>
+          
+          <div class="plot-point falling-action">
+            <div class="plot-label">Falling Action</div>
+            <div class="scene-box" data-position="falling"></div>
+          </div>
+          
+          <div class="plot-point exposition">
+            <div class="plot-label">Exposition</div>
+            <div class="scene-box" data-position="exposition"></div>
+          </div>
+          
+          <div class="plot-point resolution">
+            <div class="plot-label">Resolution</div>
+            <div class="scene-box" data-position="resolution"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scene Selection Area -->
+      <div class="scenes-container" id="page1-scenes">
+        <div class="scene">Insert story here</div>
+      </div>
+
+      <div class="scenes-container" id="page2-scenes">
+        <div class="scene" draggable="true" data-scene="1" style="background-image: url('/assets/malin 1.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="2" style="background-image: url('/assets/malin 4.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="3" style="background-image: url('/assets/malin 2.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="4" style="background-image: url('/assets/malin 6.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="5" style="background-image: url('/assets/malin 3.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="6" style="background-image: url('/assets/malin 5.jpg')"></div>
+      </div>
+
+      <div class="scenes-container" id="page3-scenes">
+        <div class="scene" draggable="true" data-scene="1" style="background-image: url('/assets/dragon and princess.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="2" style="background-image: url('/assets/knight and dragon.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="3" style="background-image: url('/assets/princess at a castle.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="4" style="background-image: url('/assets/knight forest.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="5" style="background-image: url('/assets/princess and knight.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="6" style="background-image: url('/assets/witch and dragon.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="7" style="background-image: url('/assets/princess forest.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="8" style="background-image: url('/assets/happy ending.jpg')"></div>
+        <div class="scene" draggable="true" data-scene="9" style="background-image: url('/assets/witch potion.jpg')"></div>
+      </div>
+
+      <!-- Audio Player (hidden until music is added) -->
+      <audio id="bgMusic" loop style="display: none;">
+        <source src="" type="audio/mpeg">
+      </audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
