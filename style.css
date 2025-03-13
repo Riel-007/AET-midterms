@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 150vh;
-  background-image: src('/assets/parchment-background.jpg');
+  background-image: url('assets/parchment-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@ h1 {
   height: 800px;
   margin-bottom: 2rem;
   width: 100%;
-  background-image: url('/assets/flow of plot.png');
+  background-image: url('assets/flow of plot.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -107,27 +107,27 @@ h1 {
 
 /* Page 1 specific image assignments */
 #page1 .exposition .scene-box {
-  background-image: url('/assets/malin 1.jpg');
+  background-image: url('assets/malin 1.jpg');
 }
 
 #page1 .rising-actions .scene-box[data-position="rising1"] {
-  background-image: url('/assets/malin 2.jpg');
+  background-image: url('assets/malin 2.jpg');
 }
 
 #page1 .rising-actions .scene-box[data-position="rising2"] {
-  background-image: url('/assets/malin 3.jpg');
+  background-image: url('assets/malin 3.jpg');
 }
 
 #page1 .climax .scene-box {
-  background-image: url('/assets/malin 4.jpg');
+  background-image: url('assets/malin 4.jpg');
 }
 
 #page1 .falling-action .scene-box {
-  background-image: url('/assets/malin 5.jpg');
+  background-image: url('assets/malin 5.jpg');
 }
 
 #page1 .resolution .scene-box {
-  background-image: url('/assets/malin 6.jpg');
+  background-image: url('assets/malin 6.jpg');
 }
 
 .rising-boxes {
