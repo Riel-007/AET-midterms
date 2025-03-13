@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 150vh;
-  background-image: url('/assets/parchment-background.jpg');
+  background-image: src('/assets/parchment-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
